@@ -26,7 +26,7 @@ export function Modal({ games }: { games: Game[] }) {
         throw new Error("Game e name não informados");
       }
 
-      await axios.post(`${import.meta.env.SERVER_URL}/${data.game}/ads`, {
+      await axios.post(`${import.meta.env.VITE_SERVER_URL}/${data.game}/ads`, {
         name: data.name,
         yearsPlaying: Number(data.yearsPlaying),
         discord: data.discord,

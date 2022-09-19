@@ -18,7 +18,7 @@ function App() {
   const [games, setGames] = useState<Game[]>([]);
 
   useEffect(() => {
-    axios(`${import.meta.env.SERVER_URL}/games`).then(({ data }) =>
+    axios(`${import.meta.env.VITE_SERVER_URL}/games`).then(({ data }) =>
       setGames(data)
     );
   }, []);

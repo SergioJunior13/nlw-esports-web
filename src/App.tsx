@@ -18,7 +18,7 @@ function App() {
   const [games, setGames] = useState<Game[]>([]);
 
   useEffect(() => {
-    axios(`${import.meta.env.VITE_SERVER_URL}/games`).then(({ data }) =>
+    axios(`https://server-nlw-esports.herokuapp.com/games`).then(({ data }) =>
       setGames(data)
     );
   }, []);

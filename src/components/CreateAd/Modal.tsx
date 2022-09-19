@@ -26,15 +26,18 @@ export function Modal({ games }: { games: Game[] }) {
         throw new Error("Game e name não informados");
       }
 
-      await axios.post(`${import.meta.env.VITE_SERVER_URL}/${data.game}/ads`, {
-        name: data.name,
-        yearsPlaying: Number(data.yearsPlaying),
-        discord: data.discord,
-        weekDays: weekDays.map(Number),
-        hourStart: data.hourStart,
-        hourEnd: data.hourEnd,
-        useVoiceChannel: useVoiceChannel,
-      });
+      await axios.post(
+        `https://server-nlw-esports.herokuapp.com/${data.game}/ads`,
+        {
+          name: data.name,
+          yearsPlaying: Number(data.yearsPlaying),
+          discord: data.discord,
+          weekDays: weekDays.map(Number),
+          hourStart: data.hourStart,
+          hourEnd: data.hourEnd,
+          useVoiceChannel: useVoiceChannel,
+        }
+      );
 
       alert("Ad criado com sucesso.");
     } catch (err) {

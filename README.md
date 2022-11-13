@@ -1,3 +1,10 @@
-# NLW eSports
+# NLW eSports (Web)
 
-Projeto desenvolvido no NLW eSports da Rocketseat.
+Parte web da aplicação desenvolvida no NLW eSports da Rocketseat.
+
+> Tecnologias
+
+- React
+- TypeScript
+- Tailwind CSS
+- Radix UI

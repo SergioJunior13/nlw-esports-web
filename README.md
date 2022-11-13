@@ -2,7 +2,7 @@
 
 Parte web da aplicação desenvolvida no NLW eSports da Rocketseat.
 
-> Tecnologias
+## Tecnologias
 
 - React
 - TypeScript
